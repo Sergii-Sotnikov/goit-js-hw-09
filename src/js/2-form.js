@@ -51,7 +51,7 @@ function populateForm(){
             formElem.elements[field].value = DataFromLS[field];
         });
     } catch{
-        alert('Якась халепа!');
+        alert('ERROR');
     }
 }
 
