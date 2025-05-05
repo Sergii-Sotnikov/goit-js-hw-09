@@ -40,13 +40,10 @@ function populateForm(){
     }
     try{
         const DataFromLS = JSON.parse(savedLSData);
-        console.log(DataFromLS)
         // formElem.email.value = DataFromLS.email;
         // formElem.message.value = DataFromLS.email;
         const formObj = new FormData(formElem)
-        console.log(formObj);
         const formFields = Array.from(formObj.keys())
-        console.log(formFields);
         formFields.forEach(field => {
             formElem.elements[field].value = DataFromLS[field];
         });
